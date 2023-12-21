@@ -66,8 +66,8 @@ public class RoomReservationBreach {
                         user = in.next();
                         System.out.print("Masukan Password : ");
                         Pass = in.next();
-                        
-                            if (idAdmin.equals(idAdmin) && passAdmin.equals(passAdmin)) {
+    
+                            if (user.equals(idAdmin) && Pass.equals(passAdmin)) {
                                 login = true;
                             } else {
                                 System.out.println("Username dan Password Salah");
@@ -459,16 +459,17 @@ public class RoomReservationBreach {
                             System.out.print("Pengisian Data");
                             penyewa = in.next();
                         } 
-                        System.out.println("Apakah anda Tenaga Kependidikan Polinema (Y/N)");
+                        System.out.println("Apakah anda Tenaga Kependidikan Polinema (y/n)");
                         penggunaInternalTendik = in.next();
                         penggunaInternalTendik = benar ? "Y" : "N";
-                        System.out.println("Apakah anda Pegawai Polinema? (Y/N) ");
+                        System.out.println("Apakah anda Pegawai Polinema? (y/n) ");
                         penggunaInternalPegawai = in.next();
-                        penggunaInternalPegawai = benar ? "Y" : "N";
+                        penggunaInternalPegawai = benar ? "y" : "n";
                     
                           
                         if (penggunaInternalTendik.equalsIgnoreCase("y") || penggunaInternalPegawai.equalsIgnoreCase("y")) {
                                 System.out.println("Lengkapi Data Berikut: ");
+                                System.out.println();
                                 System.out.print("Nama              : ");
                                 namaPengguna = in.next();
                                 System.out.print("Alamat            : ");
